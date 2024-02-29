@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Destinations</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f4f4f9; /* Light grey background */
+        }
+
+        .header {
+            background-color: #005f73; /* Dark blue header */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .destination {
+            margin: 30px 0;
+        }
+
+        button {
+            background-color: #ffbf69; /* Orange button */
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff9f1c; /* Darker orange on hover */
+        }
+
+        video {
+            width: 100%; /* Responsive video size */
+            height: auto;
+            margin-top: 20px;
+        }
+
+        ul {
+            text-align: left;
+            list-style: none; /* Remove default list styling */
+        }
+
+        ul li {
+            background-color: #e0f2fe; /* Light blue background for list items */
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
 
@@ -16,22 +73,26 @@
 </div>
 
 <div class="content">
-    <!-- Insert content about various destinations here -->
-    <div class="destination">
-        <h3>Paris, France</h3>
-        <p>The City of Light shines bright for travelers interested in art, history, and culture.</p>
-        <!-- More content -->
-    </div>
+    <!-- Embedded video -->
+    <video controls>
+        <source src="Travel_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
-    <div class="destination">
-        <h3>Great Barrier Reef, Australia</h3>
-        <p>Experience the underwater splendor of one of the world's most famous reefs.</p>
-        <!-- More content -->
-    </div>
-
-    <!-- Add more sections for different destinations -->
+    <h3>Great Solo Travel Destinations</h3>
+    <ul>
+        <li>Iceland - For the Northern Lights and hot springs</li>
+        <li>New Zealand - For breathtaking landscapes and adventure sports</li>
+        <li>Japan - For a blend of tradition and modernity</li>
+        <li>Norway - For spectacular fjords and hiking trails</li>
+        <li>Portugal - For its coastal charm and historic cities</li>
+        <li>Costa Rica - For rainforests and wildlife</li>
+        <li>Vietnam - For stunning scenery and rich history</li>
+        <li>Chile - For the Atacama Desert and Patagonia</li>
+    </ul>
 </div>
 
 </body>
 </html>
+
 
