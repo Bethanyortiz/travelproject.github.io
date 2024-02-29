@@ -5,7 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Traveler's Paradise</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+            height: 100%;
+            background-color: #f4f4f9; /* Light grey background */
+        }
+
+        .hero {
+            background: url('Solopic.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for better readability */
+            color: #fff;
+            padding: 20px;
+            width: 100%;
+        }
+
+        button {
+            background-color: #ffbf69; /* Orange button */
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff9f1c; /* Darker orange on hover */
+        }
+
+        .center-image {
+            max-width: 100%; /* This will ensure the image is responsive and fits within its container */
+            height: auto;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
 
@@ -13,9 +60,12 @@
     <div class="overlay">
         <h1>Welcome to Traveler's Paradise</h1>
         <p>Embark on your next adventure.</p>
+        <!-- Image to be included in the center -->
+        <img src="path-to-your-central-image.jpg" alt="Central Image" class="center-image">
         <button onclick="location.href='destinations.html';">Explore Destinations</button>
     </div>
 </div>
 
 </body>
 </html>
+
