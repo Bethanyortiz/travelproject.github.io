@@ -5,7 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Destinations</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f4f4f9; /* Light grey background */
+        }
+
+        .header {
+            background-color: #005f73; /* Dark blue header */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header button {
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .content video {
+            width: 80%; /* Responsive video size */
+            max-width: 800px; /* Maximum size of the video */
+            height: auto;
+            margin-top: 20px;
+            border-radius: 8px; /* Slightly round corners on the video player */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+        }
+
+        .content h3 {
+            color: #333;
+            font-size: 24px;
+            margin-top: 40px;
+        }
+
+        .content ul {
+            list-style: none; /* Remove default list styling */
+            padding: 0;
+            text-align: left;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .content ul li {
+            background-color: #fff; /* White background for list items */
+            color: #333;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .content ul li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Hover effect for interactivity */
+        }
+
+        .destination {
+            margin: 30px 0;
+        }
+
+        button {
+            background-color: #ffbf69; /* Orange button */
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff9f1c; /* Darker orange on hover */
+        }
+    </style>
 </head>
 <body>
 
@@ -36,6 +119,5 @@
 
 </body>
 </html>
-
 
 
