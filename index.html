@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,21 +24,19 @@
             overflow: hidden;
         }
 
-        #travel-video {
+        .centered-image {
+            max-width: 100%;
+            height: auto;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
             z-index: -1;
         }
 
         .overlay {
             position: relative;
-            z-index: 1;
+            z-index: 2;
             background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better readability */
             color: #fff;
             padding: 20px;
@@ -57,30 +54,8 @@
             padding: 15px 30px;
             margin-top: 20px;
             text-decoration: none;
-            font-size: 18px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+            font-siz
 
-        button:hover {
-            background-color: #ff9f1c; /* Darker orange on hover */
-        }
-    </style>
-</head>
-<body>
 
-<div class="hero">
-    <video autoplay loop muted id="travel-video">
-        <source src="Travel_video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <div class="overlay">
-        <h1>Welcome to Traveler's Paradise</h1>
-        <p>Embark on your next adventure.</p>
-        <button onclick="location.href='destinations.html';">Explore Destinations</button>
-    </div>
-</div>
-
-</body>
-</html>
+         
+     
