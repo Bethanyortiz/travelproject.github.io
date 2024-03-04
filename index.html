@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,15 +16,30 @@
         }
 
         .hero {
+            position: relative;
             height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            background: url('Solopic.jpg') no-repeat center center/cover;
+            overflow: hidden;
+        }
+
+        #travel-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
         }
 
         .overlay {
+            position: relative;
+            z-index: 1;
             background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better readability */
             color: #fff;
             padding: 20px;
@@ -55,6 +71,10 @@
 <body>
 
 <div class="hero">
+    <video autoplay loop muted id="travel-video">
+        <source src="travel_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     <div class="overlay">
         <h1>Welcome to Traveler's Paradise</h1>
         <p>Embark on your next adventure.</p>
